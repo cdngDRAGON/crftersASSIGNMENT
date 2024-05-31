@@ -1,0 +1,52 @@
+let nfts= [] ;
+
+function mintNFT(_name ,_description, _creator){
+    let nft= {
+        name: _name ,
+        description: _description ,
+        creator: _creator 
+    };
+    nfts.push(nft) ;
+}
+
+function listNFTs(){
+    for(let i=0;i<nfts.length;i++){
+        console.log("Name :"+nfts[i].name) ;
+        console.log("Description :"+nfts[i].description) ;
+        console.log("Creator :"+nfts[i].creator) ;
+        console.log("\n------------------------------\n")
+    }
+}
+
+function getTotalSupply(){
+    return nfts.length ;
+}
+
+mintNFT("NFT1", "The First NFT", "Abhinav") ;
+mintNFT("NFT2", "The Second NFT", "Rishabh") ;
+mintNFT("NFT3", "The Third NFT", "Aditya") ;
+
+listNFTs() ;
+
+console.log("Total supply: "+getTotalSupply()) ;
+
+OUTPUT:
+Name :NFT1
+Description :The First NFT
+Creator :Abhinav
+
+------------------------------
+
+Name :NFT2
+Description :The Second NFT
+Creator :Rishabh
+
+------------------------------
+
+Name :NFT3
+Description :The Third NFT
+Creator :Aditya
+
+------------------------------
+
+Total supply: 3
