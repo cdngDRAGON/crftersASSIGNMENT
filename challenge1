@@ -1,0 +1,62 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.26;
+
+contract challenge1 {
+    // Declaring four different types of variables
+    uint public uiVar;
+    int public iVar;
+    string public sVar;
+    bool public bVar;
+
+    // Constructor to initialize variables (optional)
+    constructor(uint _uiVar, int _iVar, string memory _sVar, bool _bVar) {
+        uiVar = _uiVar;
+        iVar = _iVar;
+        sVar = _sVar;
+        bVar = _bVar;
+    }
+
+    // Set function for uintVariable
+    function setUiVar(uint _v) public returns (uint) {
+        uiVar = _v;
+        return uiVar;
+    }
+
+    // Get function for uintVariable
+    function getUVar() public view returns (uint) {
+        return uiVar;
+    }
+
+    // Set function for intVariable
+    function setIVar(int _v) public returns (int) {
+        iVar = _v;
+        return iVar;
+    }
+
+    // Get function for intVariable
+    function getIVar() public view returns (int) {
+        return iVar;
+    }
+
+    // Set function for stringVariable
+    function setSVar(string memory _v) public returns (string memory) {
+        sVar = _v;
+        return sVar;
+    }
+
+    // Get function for stringVariable
+    function getSVar() public view returns (string memory) {
+        return sVar;
+    }
+
+    // Set function for boolVariable
+    function setBVar(bool _v) public returns (bool) {
+        bVar = _v;
+        return bVar;
+    }
+
+    // Get function for boolVariable
+    function getBVar() public view returns (bool) {
+        return bVar;
+    }
+}
