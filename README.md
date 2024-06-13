@@ -47,9 +47,14 @@ To compile the code, click on the "Solidity Compiler" tab in the left-hand sideb
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyToken" contract from the dropdown menu, and then click on the "Deploy" button.
 
 From the account option click on a new account with full 100 ether so you can monitor the gas used by your contract.
-the mint and burn functions will take an address along with value seperated by comma.
-You can copy the above account from the account you selected by clicking the copy icon and paste it in balnes mint and burn finction as parameters.Run the function by giving some value(e.g. 50) in mint function. The total supply and balances will be updated now.
+The mint and burn functions will take an address along with value seperated by comma.
+
+You can copy the above account from the account you selected by clicking the copy icon and paste it in balnes mint and burn finction as parameters.
+
+Run the function by giving some value(e.g. 50) in mint function. The total supply and balances will be updated now.
+
 Burn some tokens by providing value in second parameter of the burn function.You can see that total supply remain unchanged but the balances will be updated.That was it!
+
 Good Luck.
 
 ## Authors
