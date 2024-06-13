@@ -24,3 +24,4 @@ contract MyToken {
         balances[_from] -= _value;
     }
 }
+// check README.md for detailed desricption of the above code.
